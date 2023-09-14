@@ -12,7 +12,24 @@ module.exports = {
       querystring: require.resolve("querystring-es3"), 
       url: require.resolve("url/") ,
       util: require.resolve("util/"),
+      fs
     },
+      externals: {
+      express: require("express"),
+      on-finished: require("on-finished"),
+      raw-body: require("raw-body"),
+      browserify-zlib: require("browserify-zlib"),
+      destroy: require("destroy"),
+      etag:require("etag"),
+      mime:require("mime"),
+      send: require("send"),
+    },
+  },
+ plugins: [
+    new webpack.ProvidePlugin({
+      fs: 'fs-extra',
+    })
+  ]
   },
   entry: './src/server/index.js',
   output: {
