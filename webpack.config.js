@@ -3,7 +3,6 @@ const path = require('path');
 module.exports = {
   resolve: {
     fallback: {
-      node-core-modules: require.resolve("node-core-modules"),
       zlib: require.resolve("browserify-zlib"),
       crypto: require.resolve("browserify-crypto"),
       path: require.resolve("path-browserify"),
