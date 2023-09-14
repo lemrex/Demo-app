@@ -8,5 +8,9 @@ module.exports = {
   },
   mode: 'development',
   devtool: 'source-map',
+  node: {
+	__dirname:false,
+        __filename: false,
+  },
 };
 
