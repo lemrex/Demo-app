@@ -28,11 +28,11 @@
     "stream-browserify": "^3.0.0",
     "stream-http": "^3.2.0",
     "url": "^0.11.2",
-    "util": "^0.12.5"
+    "util": "^0.12.5",
+    "webpack": "^4.47.0"
   },
   "devDependencies": {
     "@webpack-cli/generators": "^3.0.7",
-    "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
   },
   "description": ""
